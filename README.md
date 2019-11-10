@@ -11,7 +11,7 @@ This basic tip calculator takes in the users inputs and calculates their total b
 
 https://jellboeck.github.io/tip-calculator/
 
-![Image of the tip calculator]("Images/main/PNG")
+![Image of the tip calculator]("/Images/main/PNG")
 
 
 
