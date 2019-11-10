@@ -5,7 +5,8 @@
 
   <meta charset="utf8">
   <Title>JavaScript Tip Calculator</Title>
-  <link rel="stylesheet" href="/Assets/style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Kotta+One&display=swap" rel="stylesheet">
 
 </head>
 
@@ -19,21 +20,23 @@
       <input type="text" placeholder="Enter your total bill..." id="billTotal">
     </div>
     <div>
-      <label>Tip</label>
-      <input type="range" value="0" id="tipInput">
+      <label>Tip Percentage</label>
+      <input type="range" value="0" max="50" id="tipInput">
+      <span id="tipOutput"></span>
     </div>
     <div>
       <label>Split (Number of People)</label>
-      <input type="range" min="1" max="10" id="splitInput">
+      <input type="range" value="1" min="1" max="10" id="splitInput">
+      <span id="splitOutput"></span>
     </div>
     <hr>
 
     <div>
       <div>
-        <label>New Bill (Per Person):</label><span>0</span>
+        <label>New Bill (Includes Tip):</label><span id="newBill">$0.00</span>
       </div>
       <div>
-        <label>Tip Amount:</label><span>0</span>
+        <label>Tip Amount:</label><span id="tipEach">$0.00</span>
       </div>
     </div>
   </div>
@@ -43,6 +46,6 @@
 </body>
 
 
-
+<script src="calculator.js"></script>
 
 </html>
